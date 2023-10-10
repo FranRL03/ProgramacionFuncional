@@ -1,6 +1,7 @@
 package com.ejercicios.Ejercicios;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -39,6 +40,12 @@ public class Ejercicio3 {
         System.out.println(cantidadVideos);
 
         System.out.println("Mostrar en consola el título de los 3 cursos con mayor duración.");
+
+        cursos.stream()
+                .sorted(Comparator.comparingDouble(Curso::getDuracion).reversed())
+                .limit(3)
+                .map(Curso::getTitulo)
+                .forEach(System.out::println);
 
         
 
