@@ -47,8 +47,13 @@ public class Ejercicio3 {
                 .map(Curso::getTitulo)
                 .forEach(System.out::println);
 
+        System.out.println("Mostrar en consola la duración total de todos los cursos");
+        System.out.println("Mostrar en consola todos aquellos cursos que superen el promedio en cuanto a duración se refiere.");
+        System.out.println("Mostrar en consola la duración de todos aquellos cursos que tengan una cantidad de alumnos inscritos menor a 500.");
+        System.out.println("Obtener el curso con mayor duración.");
+        System.out.println("Crear una lista de Strings con todos los títulos de los cursos.");
+        System.out.println("Obtener una cadena que incluya dentro el título de todos los cursos separados por una coma.");
         
-
 
     }
 }
